@@ -34,11 +34,6 @@ jobs:
           echo "リポジトリ：${{ github.repository }}"
           echo "ランナーの OS：${{ runner.os }}"
 
-      - name: わざと失敗する
-        run: |
-          echo "これから失敗します"
-          exit 1
-
   goodbye:
     needs: greet
     runs-on: ubuntu-latest
